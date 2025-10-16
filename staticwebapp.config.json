@@ -1,4 +1,9 @@
- "routes": [
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/merch/*", "/sideline/*", "/labs/*"]
+  },
+  "routes": [
     {
       "route": "/merch/*",
       "serve": "/merch/index.html"
