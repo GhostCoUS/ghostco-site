@@ -19,21 +19,23 @@
     {
       "route": "/labs/*",
       "serve": "/labs/index.html"
+    },
+    {
+      "route": "https://merch.ghostco.us/*",
+      "rewrite": "/merch/index.html"
+    },
+    {
+      "route": "https://sideline.ghostco.us/*",
+      "rewrite": "/sideline/index.html"
+    },
+    {
+      "route": "https://labs.ghostco.us/*",
+      "rewrite": "/labs/index.html"
     }
   ],
   "responseOverrides": {
     "404": {
       "rewrite": "/index.html"
-    }
-  },
-  "globalHeaders": {
-    "Access-Control-Allow-Origin": "*"
-  },
-  "platform": {
-    "routes": {
-      "merch.ghostco.us": "/merch/index.html",
-      "sideline.ghostco.us": "/sideline/index.html",
-      "labs.ghostco.us": "/labs/index.html"
     }
   }
 }
