@@ -1,7 +1,7 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html",
-    "exclude": ["/merch/*", "/sideline/*", "/support/*", "/labs/*"]
+    "exclude": ["/merch/*", "/sideline/*", "/labs/*"]
   },
   "routes": [
     {
@@ -13,11 +13,19 @@
       "serve": "/sideline/index.html"
     },
     {
-      "route": "/support/*",
-      "serve": "/support/index.html"
+      "route": "/labs/*",
+      "serve": "/labs/index.html"
     },
     {
-      "route": "/labs/*",
+      "route": "https://merch.ghostco.us/*",
+      "serve": "/merch/index.html"
+    },
+    {
+      "route": "https://sideline.ghostco.us/*",
+      "serve": "/sideline/index.html"
+    },
+    {
+      "route": "https://labs.ghostco.us/*",
       "serve": "/labs/index.html"
     }
   ],
