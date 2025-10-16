@@ -51,7 +51,29 @@ body {
   margin-bottom: 1.2rem;
 }
 
+.nav-buttons {
+  margin: 1.2rem 0 2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.4rem;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--white);
+  border: 1px solid var(--gray);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--orange);
+  border-color: var(--orange);
+}
+
 .email {
+  display: inline-block;
   color: var(--white);
   text-decoration: none;
   border: 1px solid var(--gray);
