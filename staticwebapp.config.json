@@ -5,6 +5,27 @@
   },
   "routes": [
     {
+      "route": "/*",
+      "serve": "/merch/index.html",
+      "headers": {
+        "Host": "merch.ghostco.us"
+      }
+    },
+    {
+      "route": "/*",
+      "serve": "/sideline/index.html",
+      "headers": {
+        "Host": "sideline.ghostco.us"
+      }
+    },
+    {
+      "route": "/*",
+      "serve": "/labs/index.html",
+      "headers": {
+        "Host": "labs.ghostco.us"
+      }
+    },
+    {
       "route": "/merch/*",
       "serve": "/merch/index.html"
     },
@@ -14,18 +35,6 @@
     },
     {
       "route": "/labs/*",
-      "serve": "/labs/index.html"
-    },
-    {
-      "route": "https://merch.ghostco.us/*",
-      "serve": "/merch/index.html"
-    },
-    {
-      "route": "https://sideline.ghostco.us/*",
-      "serve": "/sideline/index.html"
-    },
-    {
-      "route": "https://labs.ghostco.us/*",
       "serve": "/labs/index.html"
     }
   ],
